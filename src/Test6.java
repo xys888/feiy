@@ -5,7 +5,7 @@ public class Test6 {
 
     public static void main(String[] args) {
         String param = "445884865355710465 445884865355710465 435510758308970496 445614183443070977 445615581404594177";
-        String p = "435510758308970496";
+        String p = "435510758308970476";
         Map m = new HashMap();
         int i = param.indexOf(p);
         System.out.println("i"+":"+i);
@@ -15,6 +15,6 @@ public class Test6 {
             m.put("settleType", "0");
         }
         System.out.println(m);
-        System.out.println(348431788.51-349078020.00);
+        System.out.println();
     }
 }
