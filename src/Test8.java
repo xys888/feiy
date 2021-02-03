@@ -15,5 +15,9 @@ public class Test8 {
         System.out.println("==========================================================");
         System.out.println(sum);
         System.out.println(Math.abs(sum));
+        for(int i = 0;i<64;i++){
+            String url = "db"+i+".jdbc.url";
+            System.out.println(url);
+        }
     }
 }
