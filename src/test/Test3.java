@@ -1,3 +1,5 @@
+package test;
+
 public class Test3 {
     static double a = 2.9;
     static double b = 2.1;

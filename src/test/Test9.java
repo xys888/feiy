@@ -1,4 +1,4 @@
-import netscape.javascript.JSObject;
+package test;
 
 public class Test9 {
 

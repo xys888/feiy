@@ -1,3 +1,5 @@
+package other;
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 
