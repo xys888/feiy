@@ -14,11 +14,11 @@ public class Test13 {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-      int day =0;
+        int day = 0;
 
-        if(day > 0){
+        if (day > 0) {
             System.out.println("true");
-        }else{
+        } else {
             System.out.println("false");
         }
     }

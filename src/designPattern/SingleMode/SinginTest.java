@@ -1,6 +1,9 @@
-package SingleMode;
+package designPattern.SingleMode;
 
 /**
+ * 单例模式
+ *
+ * @author xys
  * @date 2021年05月26日14:38
  */
 public class SinginTest {

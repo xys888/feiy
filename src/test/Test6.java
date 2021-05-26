@@ -10,10 +10,10 @@ public class Test6 {
         String p = "435510758308970476";
         Map m = new HashMap();
         int i = param.indexOf(p);
-        System.out.println("i"+":"+i);
-        if(param.indexOf(p) != -1){
+        System.out.println("i" + ":" + i);
+        if (param.indexOf(p) != -1) {
             m.put("settleType", "1");
-        }else {
+        } else {
             m.put("settleType", "0");
         }
         System.out.println(m);

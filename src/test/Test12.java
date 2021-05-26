@@ -14,22 +14,27 @@ public class Test12 {
     private static Properties pros = getPprVue("db.properties");
     public static Map<String, String> backUpTableList = new ConcurrentHashMap<String, String>();
     private static Test12 backObj = new Test12();
-    public static Test12 getDbBackUpMethod(){
+
+    public static Test12 getDbBackUpMethod() {
         return backObj;
     }
+
     public void backup(String tableName) {
-        if(null != backUpTableList.get(tableName)) return ;
+        if (null != backUpTableList.get(tableName)) return;
         backUpTableList.put(tableName, tableName); // 标记已经用于备份
         new Thread(new DbBackUpThread(tableName)).start();
     }
+
     /**
      * 用于执行某表的备份
      */
     class DbBackUpThread implements Runnable {
         String tableName = null;
-        public DbBackUpThread(String tableName){
+
+        public DbBackUpThread(String tableName) {
             this.tableName = tableName;
         }
+
         @Override
         public void run() {
             try {
@@ -59,7 +64,7 @@ public class Test12 {
                 sb.append("--lock-all-tables=true ");
                 sb.append("--result-file=");
                 sb.append(sqlpath);
-                sb.append(tableName+".sql");
+                sb.append(tableName + ".sql");
                 sb.append(" ");
                 sb.append("--default-character-set=utf8 ");
                 sb.append(databaseName);
@@ -70,11 +75,12 @@ public class Test12 {
                 p.waitFor(); // 该语句用于标记，如果备份没有完成，则该线程持续等待
             } catch (Exception e) {
                 e.getMessage();
-            }finally{
+            } finally {
                 backUpTableList.remove(tableName); // 最终都将解除
             }
         }
     }
+
     public static Properties getPprVue(String properName) {
         InputStream inputStream = Test12.class.getClassLoader().getResourceAsStream(properName);
         Properties p = new Properties();

@@ -8,10 +8,10 @@ public class Test7 {
     public static void main(String[] args) {
         double d = 121.11231;
         //第一种方式
-        BigDecimal bigDecimal=new BigDecimal(d);
+        BigDecimal bigDecimal = new BigDecimal(d);
         double format1 = bigDecimal.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
         //第二种方式
-        DecimalFormat decimalFormat =new DecimalFormat("#.00");
+        DecimalFormat decimalFormat = new DecimalFormat("#.00");
         String format2 = decimalFormat.format(d);
         //第三种方式
         String format3 = String.format("%.2f", d);

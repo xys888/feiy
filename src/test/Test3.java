@@ -14,15 +14,15 @@ public class Test3 {
         System.out.println(Math.ceil(d));
 
         System.out.println("第二次");
-        System.out.println( Math.floor(a));
+        System.out.println(Math.floor(a));
         System.out.println(Math.floor(b));
-        System.out.println( Math.floor(c));
+        System.out.println(Math.floor(c));
         System.out.println(Math.floor(d));
 
         System.out.println("第三次");
-        System.out.println( Math.round(a));
+        System.out.println(Math.round(a));
         System.out.println(Math.round(b));
-        System.out.println( Math.round(c));
+        System.out.println(Math.round(c));
         System.out.println(Math.round(d));
     }
 

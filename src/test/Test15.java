@@ -25,7 +25,7 @@ public class Test15 {
     private static void getTest() {
         StringBuilder str = new StringBuilder();//定义变长字符串
         Random random = new Random();
-       //随机生成数字，并添加到字符串
+        //随机生成数字，并添加到字符串
         for (int i = 0; i < 8; i++) {
             str.append(random.nextInt(10));
         }
@@ -35,13 +35,14 @@ public class Test15 {
     }
 
 
-    public static  Long nextId1() {
+    public static Long nextId1() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddhhmm");
         String format = simpleDateFormat.format(new Date());
         String test = getTest1();
-        String id =format+test;
+        String id = format + test;
         return Long.valueOf(id);
     }
+
     private static String getTest1() {
         StringBuilder str = new StringBuilder();//定义变长字符串
         Random random = new Random();
@@ -53,6 +54,7 @@ public class Test15 {
 //        int num = Integer.parseInt(str.toString());
         return str.toString();
     }
+
     public static void main(String[] args) {
 //        jieCheng(18);
 //        getRandom1();

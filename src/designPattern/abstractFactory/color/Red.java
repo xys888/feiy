@@ -1,8 +1,9 @@
-package abstractFactory.color;
+package designPattern.abstractFactory.color;
 
-import abstractFactory.face.Color;
+import designPattern.abstractFactory.face.Color;
 
 /**
+ * @author xys
  * @date 2021年05月26日14:24
  */
 public class Red implements Color {

@@ -27,6 +27,7 @@ public class Test1 {
 
     /**
      * 一遍Hash
+     *
      * @param nums
      * @param target
      * @return
@@ -44,26 +45,28 @@ public class Test1 {
 
     /**
      * 字符串中第一个唯一字符
+     *
      * @param s
      * @return
      */
-    public static int firstUniqChar(String s){
-        HashMap<Character,Integer> count = new HashMap<>();
-        for(int i = 0;i<s.length();i++){
+    public static int firstUniqChar(String s) {
+        HashMap<Character, Integer> count = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            count.put(c,count.getOrDefault(c,0)+1);
+            count.put(c, count.getOrDefault(c, 0) + 1);
         }
-        for(int i = 0;i<s.length();i++){
-            if(count.get(s.charAt(i)) == 1){
+        for (int i = 0; i < s.length(); i++) {
+            if (count.get(s.charAt(i)) == 1) {
                 return i;
             }
         }
         return -1;
     }
+
     public static void main(String[] args) {
-        int[] ints1 = {1, 21,1,2,3,6};
+        int[] ints1 = {1, 21, 1, 2, 3, 6};
         int[] ints = twoSum(ints1, 24);
-        System.out.println(ints[0]+"===="+ints[1]);
+        System.out.println(ints[0] + "====" + ints[1]);
         System.out.println(firstUniqChar("hello world"));
     }
 }

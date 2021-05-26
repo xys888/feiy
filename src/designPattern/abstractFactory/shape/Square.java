@@ -1,8 +1,9 @@
-package abstractFactory.shape;
+package designPattern.abstractFactory.shape;
 
-import abstractFactory.face.Shape;
+import designPattern.abstractFactory.face.Shape;
 
 /**
+ * @author xys
  * @date 2021年05月26日14:21
  */
 public class Square implements Shape {

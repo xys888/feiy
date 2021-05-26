@@ -19,6 +19,7 @@ public class TestTime {
         c.set(Calendar.SECOND, 0);
         return getParseDate(FORMAT_DATE_STR, c.getTime());
     }
+
     public static String getParseDate(String pattern, Date date) {
         SimpleDateFormat sdf = new SimpleDateFormat();
         sdf.applyPattern(pattern);
@@ -49,12 +50,12 @@ public class TestTime {
 
         Date date = null;
         try {
-            date =  simpleDateFormat.parse("2021-02-05");
+            date = simpleDateFormat.parse("2021-02-05");
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        System.out.println(minusDay(date,2));
-        System.out.println(getParseDate("yyyy-MM-dd 00:00:00",date));
+        System.out.println(minusDay(date, 2));
+        System.out.println(getParseDate("yyyy-MM-dd 00:00:00", date));
     }
 
 }

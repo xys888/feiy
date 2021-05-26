@@ -1,10 +1,13 @@
-package abstractFactory;
+package designPattern.abstractFactory;
 
-import abstractFactory.face.Color;
-import abstractFactory.face.Shape;
-import abstractFactory.factory.AbstractFactory;
+import designPattern.abstractFactory.face.Color;
+import designPattern.abstractFactory.face.Shape;
+import designPattern.abstractFactory.factory.AbstractFactory;
 
 /**
+ * 抽象工厂模式
+ *
+ * @author xys
  * @date 2021年05月26日14:33
  */
 public class AbstractFactoryPatternDemo {

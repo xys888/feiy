@@ -8,6 +8,7 @@ import java.util.Date;
 public class Test5 {
 
     private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
     ////获取当前时间的前一天时间
     public static Date getWorkingDayTimeByD(String timess) {
         //定义一个日历类型的时间
@@ -18,7 +19,7 @@ public class Test5 {
             //将String类型的时间类型转换成Date类型
             parse = simpleDateFormat.parse(timess);
         } catch (ParseException e) {
-             e.printStackTrace();
+            e.printStackTrace();
         }
         calendar.setTime(parse);
         calendar.set(Calendar.HOUR_OF_DAY, 4);
@@ -39,8 +40,9 @@ public class Test5 {
         c2.add(Calendar.DATE, -1);
         int hour = c1.get(Calendar.HOUR_OF_DAY);
         int oldHour = c2.get(Calendar.HOUR_OF_DAY);
-        return hour+24-oldHour;
+        return hour + 24 - oldHour;
     }
+
     public static void main(String[] args) {
         System.out.println(getWorkingDayTimeByD("2020-12-07"));
     }
