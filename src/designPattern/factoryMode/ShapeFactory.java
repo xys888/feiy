@@ -6,6 +6,7 @@ import designPattern.factoryMode.shape.Rectangle;
 import designPattern.factoryMode.shape.Square;
 
 /**
+ * 第三步
  * @author xys
  * @date 2021年05月26日15:16
  */

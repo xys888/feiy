@@ -1,6 +1,6 @@
-package designPattern.factoryMode.shape;
+package designPattern.abstractFactoryMode.shape;
 
-import designPattern.factoryMode.face.Shape;
+import designPattern.abstractFactoryMode.face.Shape;
 
 /**
  * 第二步
