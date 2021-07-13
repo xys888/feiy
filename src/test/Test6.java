@@ -4,6 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Test6 {
+private Byte ss;
+
+    public Byte getSs() {
+        return ss;
+    }
+
+    public void setSs(Byte ss) {
+        this.ss = ss;
+    }
 
     public static void main(String[] args) {
         String param = "445884865355710465 445884865355710465 435510758308970496 445614183443070977 445615581404594177";
