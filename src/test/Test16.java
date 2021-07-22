@@ -14,21 +14,33 @@ public class Test16 {
         String ss = "6217210402005885924";
         String ss1 = "1";
         System.out.println(Math.abs(ss.hashCode()%32));
+        System.out.println("==============================================");
         SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
         String format = s.format(new Date());
         System.out.println(format);
-        System.out.println(md5("17303454502"));
+        System.out.println("==============================================");
         int i = Math.abs(md5("17303454502").hashCode()) % 1024;
         System.out.println(i);
         int ssdbTest = i / 256;
         System.out.println(String.valueOf(ssdbTest));
         System.out.println(24000/4500);
+        System.out.println("==============================================");
         Byte aByte = Byte.valueOf("1");
         Test6 test6=new Test6();
         test6.setSs(Byte.valueOf(ss1));
         System.out.println("aByte"+test6.getSs());
+        System.out.println("==============================================");
         List<String> modifyFields = Arrays.asList("accSts_accSts_".split("_"));
-
+        if("again".equals("again") && !"80000".equals("2000") &&
+                !"20000".equals("8000")){
+            System.out.println(1);
+        }else{
+            System.out.println(2);
+        }
+        System.out.println("==============================================");
+        System.out.println(UUID.randomUUID());
+        System.out.println("==============================================");
+        System.out.println(md5("17303454502"));
     }
     public static String md5(final String msg) {
         try {
@@ -44,7 +56,6 @@ public class Test16 {
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-
         return "";
     }
 }
