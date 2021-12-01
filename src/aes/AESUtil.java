@@ -10,6 +10,8 @@ import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  * AES加解密工具类
@@ -145,7 +147,11 @@ public class AESUtil {
 //        System.out.println(aesDecode("z1FpZ8F/q5vtcZwRmDWUFg=="));
 
 //        System.out.println(aesEncode("胡东兴"));
-        System.out.println("MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7ud1VQqGDNF3MOTbzVGdaE8sekrkiz3ChfBfygvvfDb2ijSDeLRzFzVPTJa2pvkLNFuWpyJrArA1l2mMD1SxkHaWFZhUa4SsYnFE8pvKg5SGfesSRhhZFgZhkMoUvzZ/bXpR/O9hColCeNKbk9oqNW8dUOpoccwlVHDVdy3RZEQIDAQAB".length());
+        HashMap hashMap = new HashMap();
+        LinkedHashMap linkedHashMap = new LinkedHashMap();
+        //System.out.println("MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7ud1VQqGDNF3MOTbzVGdaE8sekrkiz3ChfBfygvvfDb2ijSDeLRzFzVPTJa2pvkLNFuWpyJrArA1l2mMD1SxkHaWFZhUa4SsYnFE8pvKg5SGfesSRhhZFgZhkMoUvzZ/bXpR/O9hColCeNKbk9oqNW8dUOpoccwlVHDVdy3RZEQIDAQAB".length());
+        String s = aesDecode("rWd3Hb+AzNg3IXF1b5vD+g==");
+        System.out.println(s);
     }
 
 }
