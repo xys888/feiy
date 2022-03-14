@@ -11,17 +11,17 @@ public class Test14 {
     private static int testReturn1() {
         int i = 1;
         try {
-            i++;
+            ++i;
             System.out.println("try" + i);
             return i;
         } catch (Exception e) {
             i++;
             System.out.println("catch" + i);
         } finally {
-            i++;
+            ++i;
             System.out.println("finally" + 4);
             System.out.println();
+            return i;
         }
-        return i;
     }
 }
